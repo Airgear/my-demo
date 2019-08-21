@@ -5,16 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src='script.js'></script>
+    <script src='script.js' defer></script>
 </head>
 <body>
-    <p>
-        Введите что-либо : <input type="text" id='inp1'>
+    <form>
+        <label for="inp1">Введите что-либо :</label>
+        <input type="text" id='inp1'>
         <input type="text" id='inp2'>
-    </p>
+        <button onclick="f1()">Сравнение</button>
+    </form>
     <hr> 
-    <button onclick="f1()">Сравнение</button>
-    <button onclick="f2()">Объединение масивов</button>
+    <form action="">
+        <label for="">Введите массив :</label>
+        <input type="text" id='inp3'>
+        <button onclick="f2()">Объединение массивов</button>
+    </form>
+    <hr>
 </body>
 </html>
